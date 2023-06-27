@@ -1,7 +1,6 @@
 import userData from './database/user.json';
-import dataArray from './database/data.json';
-import friendsArray from './database/friends.json';
-import transArray from './database/transactions.json';
+
+
 
 import Profile from './Profile';
 

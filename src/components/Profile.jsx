@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 const Profile = ({ user }) => {
     return (
         <div className="profile">
@@ -30,13 +28,5 @@ const Profile = ({ user }) => {
             </ul>
         </div>)
 };
-
-// Profile.propTypes = {
-//     username: PropTypes.string.isRequired,
-//     tag: PropTypes.string.isRequired,
-//     location: PropTypes.string.isRequired,
-//     avatar: PropTypes.string.isRequired,
-//     stats: PropTypes.array.isRequired,
-// };
 
 export default Profile;
