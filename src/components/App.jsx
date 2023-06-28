@@ -1,7 +1,7 @@
-import user from './database/user.json';
-import data from './database/data.json';
-import friends from './database/friends.json';
-import transactions from './database/transactions.json';
+import user from './backend/user.json';
+import data from './backend/data.json';
+import friends from './backend/friends.json';
+import transactions from './backend/transactions.json';
 
 import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
@@ -13,23 +13,19 @@ export const App = () => {
   return (
     <>
       {/* Task 1 */}
-      Task 1
       <Profile
         user={user}
       />
       {/* Task 2 */}
-      Task 2
       <Statistics
         data={data}
         title="Upload stats"
       />
       {/* Task 3 */}
-      Task 3
       <FriendList
         friends={friends}
       />
       {/* Task 4 */}
-      Task 4
       <TransactionHistory
         items={transactions}
       />

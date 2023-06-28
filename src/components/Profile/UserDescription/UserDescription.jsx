@@ -1,3 +1,4 @@
+import css from './UserDescription.module.css';
 import PropTypes from 'prop-types';
 
 const UserDescription = (
@@ -6,15 +7,15 @@ const UserDescription = (
     }
 ) => {
     return (
-        <div className="description">
+        <div className={css.description}>
             <img
                 src={avatar}
                 alt={username}
-                className="avatar"
+                className={css.avatar}
             />
-            <p className="name">{username}</p>
-            <p className="tag">@{tag}</p>
-            <p className="location">{location}</p>
+            <p className={css.name}>{username}</p>
+            <p className={css.tag}>@{tag}</p>
+            <p className={css.location}>{location}</p>
         </div>
     )
 };
@@ -26,7 +27,8 @@ UserDescription.propTypes = {
             location: PropTypes.string.isRequired,
             tag: PropTypes.string.isRequired,
             username: PropTypes.string.isRequired,
-    }),
+        }
+    ),
 };
 
 export default UserDescription;
