@@ -1,25 +1,25 @@
-import userData from './database/user.json';
-
-
+import user from './database/user.json';
+import data from './database/data.json';
 
 import Profile from './Profile';
-
-// const { username, tag, location, avatar, stats } = data;
-// const { followers, views, likes } = stats;
-
-// console.log(dataArray);
-// console.log(friendsArray);
-// console.log(userData);
-// console.log(transArray);
+import Statistics from './Statistics';
 
 
 export const App = () => {
   return (
     <>
       {/* Task 1 */}
-      <Profile user={userData} />
+      Task 1
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
       {/* Task 2 */}
       Task 2
+      <Statistics data={data} title="Upload stats" />
       {/* Task 3 */}
       Task 3
       {/* Task 4 */}
