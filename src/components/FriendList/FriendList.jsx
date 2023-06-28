@@ -1,10 +1,10 @@
-import FriendListItem from "components/FriendListItem";
+import FriendListItem from "components/FriendList/FriendListItem/FriendListItem";
 
 const FriendList = ({ friends }) => {
     return (
-        // <ul className="friend-list">
-        <FriendListItem friends={friends} />
-        // </ul>
+        <ul className="friend-list">
+            <FriendListItem friends={friends} />
+        </ul>
     );
 };
 

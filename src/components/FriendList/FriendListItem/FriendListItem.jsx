@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const FriendListItem = ({ friends }) => {
     return (
-        <ul className="friend-list">
+        <>
             {friends.map(({
                 avatar,
                 name,
@@ -17,7 +17,7 @@ const FriendListItem = ({ friends }) => {
                     </li>
                 );
             })}
-        </ul>
+        </>
     );
 };
 
