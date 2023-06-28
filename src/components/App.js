@@ -2,7 +2,7 @@ import user from './database/user.json';
 import data from './database/data.json';
 
 import Profile from './Profile';
-import Statistics from './Statistics';
+import Statistics from './Statistics/Statistics';
 
 
 export const App = () => {
@@ -19,7 +19,10 @@ export const App = () => {
       />
       {/* Task 2 */}
       Task 2
-      <Statistics data={data} title="Upload stats" />
+      <Statistics
+        data={data}
+        title="Upload stats"
+      />
       {/* Task 3 */}
       Task 3
       {/* Task 4 */}

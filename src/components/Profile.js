@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
     return (
@@ -32,12 +32,12 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
     )
 };
 
-Profile.propTypes = {
-    username: PropTypes.string.isRequired,
-    tag: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    avatar: PropTypes.string.isRequired,
-    stats: PropTypes.array.isRequired,
-};
+// Profile.propTypes = {
+//     username: PropTypes.string.isRequired,
+//     tag: PropTypes.string.isRequired,
+//     location: PropTypes.string.isRequired,
+//     avatar: PropTypes.string.isRequired,
+//     stats: PropTypes.array.isRequired,
+// };
 
 export default Profile;

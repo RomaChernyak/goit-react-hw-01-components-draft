@@ -1,6 +1,7 @@
-// import PropTypes from 'prop-types';
 import Title from './Title/Title';
 import Stats from './Stats/Stats';
+
+console.log(Stats);
 
 const Statistics = ({ data, title }) => {
     return (
@@ -11,10 +12,5 @@ const Statistics = ({ data, title }) => {
         </>
     );
 };
-
-// Statistics.propTypes = {
-//     title: PropTypes.string,
-//     stats: PropTypes.array.isRequired,
-// };
 
 export default Statistics;

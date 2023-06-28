@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 const Stats = ({ data }) => {
     return (
         <ul className="stat-list">
-            {data.map(({ id, label, percentage }) => {
+            {data.map(({
+                id,
+                label,
+                percentage
+            }) => {
                 return (
                     <li key={id}>
                         <span className="label">{label}</span>
